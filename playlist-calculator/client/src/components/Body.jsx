@@ -20,9 +20,10 @@ function Body() {
 
   return (
     <>
-      <div className="max-w-auto  mx-auto mt-10 p-4  rounded-lg ">
+      <div className="max-w-auto  mx-auto mt-8 p-4  rounded-lg ">
         <h1 className="text-2xl md:text-3xl font-semibold text-white mb-4">
-          Find the length of any YouTube playlist:
+          Find the length of any{" "}
+          <span className="text-red-600">YouTube Playlist :</span>
         </h1>
         <form onSubmit={formik.handleSubmit}>
           <div className="mb-4 relative">
