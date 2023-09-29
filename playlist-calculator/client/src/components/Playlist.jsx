@@ -34,7 +34,7 @@ const Playlist = () => {
   return (
     <>
       <motion.div
-        className="max-w-auto mx-auto mt-10 rounded-lg text-xl md:text-2xl font-semibold text-white mb-2"
+        className="max-w-auto mx-auto lg:mt-10 mt-5  rounded-lg text-xl md:text-2xl font-semibold text-white mb-2"
         initial={{ opacity: 0, y: -50 }} // Initial animation properties
         animate={{ opacity: 1, y: 0 }} // Animation properties when component enters
         transition={{ duration: 1 }} // Animation duration
@@ -43,7 +43,7 @@ const Playlist = () => {
           <span>Title : </span>
           <span>{title}</span>
         </div>
-        <div>
+        <div className="mb-5">
           <span>No. of videos : </span>
           <span>{numberOfVideos}</span>
         </div>
