@@ -14,7 +14,7 @@ const root = require("./routes/root");
 const PORT = process.env.PORT || 3000;
 
 //cross origin resource sharing
-app.use(allowedOrigins);
+app.use(cors(corsOptions));
 
 //built-in middleware to handle urlencoded data
 //in other words, form data:
